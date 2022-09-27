@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(../assets/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+section{
+    text-align: center;
+    position: relative;  
+    
+}
+#titulo{
+    font-family: 'Akaya Kanadaka', cursive;
+    font-size: 30px;
+    margin-top: 2%;
+    color: #ffffff;
+}
+img{
+    width: 50px;
+}
+
+/*INÍCIO CSS FORMULÁRIO*/
+
+#container{
+    border: 2px solid #000000;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 50px;
+    margin-top:2%;
+    width: 20%;
+    background-color: #fefefe;
+    box-shadow: 10px 10px 20px black;
+}
+#titulo-preencher{
+    font-family: 'Reem Kufi Ink', sans-serif;
+}
+.campoPessoal{
+    margin: 5px ;
+    padding: 10px;
+    border: 0.5px solid #000000;
+    font-size: 15px;
+    text-align: center;
+    width: 90%; 
+}
+.campo{
+    margin: 5px ;
+    border: 0.5px solid #000000;
+    padding: 10px;
+    width: 90%;
+    text-align: center;
+    font-size: 15px;
+}
+#botao{
+    padding: 7px;
+    width: 50%;
+    margin-top: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0.5px solid #000000;
+    font-family: 'Reem Kufi Ink', sans-serif;
+}
+.divisoes{
+    text-align: left;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/*FIM CSS FORMULÁRIO*/
+
+/* INÍCIO CSS BOTÃO ANIMADO*/
+
+button{
+    background-color: rgb(60, 60, 60);
+    position: relative;
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+    border-radius: 2px;
+    overflow: hidden;
+    font-family: 'Varela Round', sans-serif;
+}
+button::before{
+    content: '';
+    position: absolute;
+    background-color: #50318a;
+    left: var(--x);
+    top: var(--y);
+    transform: translate(-50%, -50%);
+    height: 0px;
+    width: 0px;
+    border-radius: 50%;
+    transition: all 0.5s linear;
+}
+button:hover::before{
+    height: 350px;
+    width: 350px;
+}
+button::after{
+    content: 'Enviar';
+    position: relative;
+    z-index: 1;
+}
+
+/*FIM CSS BOTÃO ANIMADO*/
+
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* INÍCIO RESPONSIVIDADE*/
+
+@media (max-width:1200px) {
+    #container{
+        width: 260px;
+        padding: 35px;
+    }
+    #botao{
+        width: 70%;
+    }
+    img{
+        width: 0px;
+    }
+
+}
+
+/* FIM RESPONSIVIDADE*/
+
+

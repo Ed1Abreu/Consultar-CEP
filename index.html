@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/loading.css">
+        <link rel="icon" href="assets/Ponto.svg">
+        <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+        <title>Consultar CEP</title>
+    </head>
+    <body>
+       
+        <section>
+            <h1 id="titulo">Realizar consulta de CEP <img src="assets/Ponto.svg"> </h1>
+            <form id="container">
+                
+                <h1 id="titulo-preencher">Preencha os campos abaixo:</h1><br><br>
+                
+                <div class="divisoes">
+                    <label for="nome">Nome</label><br>
+                    <input class="campoPessoal" type="text" placeholder="Digite seu nome" id="nome" required>
+                </div>
+
+                <div class="divisoes">
+                    <label for="email">E-mail</label><br>
+                    <input class="campoPessoal" type="email" placeholder="Digite seu e-mail" id="email"required><br>     
+                </div>
+                
+                <div class="divisoes">
+                    <label for="cep">CEP</label><br>
+                    <input class="campo" type="text" placeholder="Digite seu CEP" id="cep" required><br>
+                </div>
+
+                <div class="divisoes">
+                    <label for="endereco">Endereço</label><br>
+                    <input class="campo" type="text" placeholder="Endereço" id="endereco"><br>
+                </div>
+                
+                <div class="divisoes">
+                    <label for="numero">Número</label><br>
+                    <input class="campo" type="text" placeholder="Número" id="numero"><br>
+                </div>
+
+                <div class="divisoes">
+                    <label for="bairro">Bairro</label><br>
+                    <input class="campo" type="text" placeholder="Bairro" id="bairro"><br>
+                </div>
+                
+                <div class="divisoes">
+                    <label for="cidade">Cidade</label><br>
+                    <input class="campo" type="text" placeholder="Cidade" id="cidade"><br>
+                </div>
+                
+                <div class="divisoes">
+                    <label for="estado">Estado</label><br>
+                    <input  class="campo" type="text" placeholder="Estado" id="estado"><br>
+                </div>
+
+                <button id="botao" ></button>
+                
+            </form>
+            <br><br><br>
+        </section>
+        <footer>
+            <br>
+            <h4>Copyright © 2022 Edvanderson Abreu & Gabriel Pontes</h4>
+            <br>
+            <br>
+        </footer>
+
+        <script src="js/pace.min.js"></script>
+        <script src="js/botao.js"></script>
+        <script src="js/script.js"></script>   
+
+    </body>
+</html>
